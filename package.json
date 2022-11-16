@@ -1,0 +1,22 @@
+{
+  "name": "the-f2e-dotsign-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "all.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/potatoleee/canvas-test.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/potatoleee/canvas-test/issues"
+  },
+  "homepage": "https://github.com/potatoleee/canvas-test#readme",
+  "dependencies": {
+    "bootstrap": "^5.0.2"
+  }
+}
