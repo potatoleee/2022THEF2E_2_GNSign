@@ -1,0 +1,11 @@
+.logo{
+    background-image: url('../images/icon.svg');
+    background-repeat: no-repeat;
+    width: 88.79px;
+    height: 67.15px;
+
+      /*  將文字推出 <h1>  */
+  text-indent: 101%;
+  overflow: hidden;
+  white-space: nowrap;
+}

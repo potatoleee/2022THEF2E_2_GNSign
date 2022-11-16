@@ -1,0 +1,18 @@
+.indexWrap{
+  max-height: 558px;
+  height: 558px;
+}
+.free{
+  padding: 13.5px 52.5px;
+  border-top-left-radius: 34px;
+  border-bottom-right-radius: 34px;
+}
+.upload{
+  background: $white;
+  border: 2px dashed $gray;
+  max-width: 417px;
+}
+
+input[type="file"] {
+  display: none;
+}

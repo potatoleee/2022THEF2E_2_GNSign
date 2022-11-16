@@ -7,29 +7,56 @@
     <link rel="stylesheet" href="./assets/style/all.css">
     <title>點點簽</title>
 </head>
-<body>
-    <!-- 1. 設定繪圖狀態，如果使用者按下滑鼠 / 點擊手機螢幕，便開啟狀態
-    2. 開啟狀態下，鎖定滑鼠 / 手指在畫布上的位置，並在滑動時產生線條
-    3. 放開滑鼠 / 手指 or 移動範圍超出畫布時，關閉狀態，並產生新路徑避免下一段繪圖受影響
-    4. 設置按鈕，讓使用者能夠重設畫布、儲存完成的簽名 -->
-    <h1 class="text-primary font-roboto fw-bold">hwqkej</h1>
-    <h2 class="fw-bold">點點簽</h2>
-    <button class="btn bg-gradient">123</button>
+<body class="bg-light">
+  <header>
+    <nav class="container">
+      <div class="d-flex justify-content-between align-items-lg-start align-items-end mt-7">
+        <h1>
+          <a class="logo" href="index.html">GNSign | 小綠簽</a>
+        </h1>
+        <a class="btn btn-outline-primary py-2 px-8 border-2 d-none d-lg-block" href="history.html">歷史紀錄</a>
+        <a class="fs-6 d-lg-none" href="history.html">歷史紀錄</a>
+      </div>
+    </nav>
+  </header>
+
+   <main class="bg-light">
     <div class="container">
-
-      <canvas id="canvas"     
-      width="500"
-      height="300" style="border: 1px solid #000"></canvas>
+      <div class="row justify-content-center indexWrap">
+        <div class="col-10  bg-light-gray rounded-4 p-0">
+          <div class="row position-relaitve ">
+            <div class="col-6">
+              <p class="free text-light bg-gradient fs-3 position-absolute">免費試用版</p>
+              <h2 class="text-primary fs-lg-1 d-none d-lg-block fw-bold mt-18">小綠簽</h2>
+              <p>護樹、永續、減碳的綠色生活
+                響應環保無紙化電子簽署，
+                省時便利又環保。
+                </p>
+            </div>
+            <div class="col-6">
+              <div class="upload rounded-2 d-flex flex-column align-items-center">
+                <img class="mx-auto mt-7 mb-5 " src="./assets/images/banner-upload.svg" alt="">
+                <label for="upload__btn" class="text-light bg-gradient py-4 mb-4 w-50 text-center rounded ">選擇檔案
+                  <input id="upload__btn" class="btn bg-gradient" type="file" accept="application/pdf" placeholder="選擇PDF檔案" />
+                </label>
+                <p class="mb-4">或拖移檔案到此處</p>
+                <p class=" text-primary fs-8 ">(限10MB 內的PDF或JPG檔)</p>
+                
+                
+              </div>
+            </div>
+          </div>
+         
+        </div>
+      </div>
+     
     </div>
+   </main>
 
-  <img class="show-img" width="250" height="150" style="border: 1px solid" />
+   <footer class="container-fluid">
+    <p class="text-center text-lg-end mb-4 fs-8">小綠簽 © Code: Potato Lee  /  Design: KT</p>
+   </footer>
 
-  <div class="btn-group">
-    <button class="clear">Clear</button>
-    <button class="save">Save</button>
-  </div>
- 
-  <a href="./farbic.html">下一頁</a>
 
     <script src="./assets/js/all.js"></script>
 </body>

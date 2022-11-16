@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/style/all.css">
+    <title>點點簽</title>
+</head>
+<body>
+    <!-- 1. 設定繪圖狀態，如果使用者按下滑鼠 / 點擊手機螢幕，便開啟狀態
+    2. 開啟狀態下，鎖定滑鼠 / 手指在畫布上的位置，並在滑動時產生線條
+    3. 放開滑鼠 / 手指 or 移動範圍超出畫布時，關閉狀態，並產生新路徑避免下一段繪圖受影響
+    4. 設置按鈕，讓使用者能夠重設畫布、儲存完成的簽名 -->
+    <h1 class="text-primary font-roboto fw-bold">hwqkej</h1>
+    <h2 class="fw-bold">點點簽</h2>
+    <button class="btn bg-gradient">123</button>
+    <div class="container">
+
+      <canvas id="canvas"     
+      width="500"
+      height="300" style="border: 1px solid #000"></canvas>
+    </div>
+
+  <img class="show-img" width="250" height="150" style="border: 1px solid" />
+
+  <div class="btn-group">
+    <button class="clear">Clear</button>
+    <button class="save">Save</button>
+  </div>
+ 
+  <a href="./farbic.html">下一頁</a>
+
+    <script src="./assets/js/all.js"></script>
+</body>
+</html>
