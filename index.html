@@ -5,12 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/style/all.css">
-    <title>點點簽</title>
+    <title>小綠簽 GNSign</title>
 </head>
-<body class="bg-light">
+<body class="bg-lg-light">
   <header>
-    <nav class="container">
-      <div class="d-flex justify-content-between align-items-lg-start align-items-end mt-7">
+    <nav class="container px-9 px-lg-0">
+      <div class="d-flex justify-content-between align-items-lg-start align-items-end mt-7 mb-lg-5">
         <h1>
           <a class="logo" href="index.html">GNSign | 小綠簽</a>
         </h1>
@@ -20,20 +20,44 @@
     </nav>
   </header>
 
-   <main class="bg-light">
-    <div class="container">
+   <main class="bg-lg-light position-relative">
+    <!-- phone pad 的圖 start -->
+    <img class=" banner__grass position-absolute d-lg-none" src="./assets/images/banner-grass.svg" alt="">
+    <img class=" banner__plant position-absolute d-lg-none" src="./assets/images/banner-plant.svg" alt="">
+    <img class=" banner__bag position-absolute d-lg-none" src="./assets/images/banner-bag.svg" alt="">
+    <img class=" banner__person--1 position-absolute d-lg-none" src="./assets/images/banner-person-01.svg" alt="">
+    <img class=" banner__person--2 position-absolute d-lg-none" src="./assets/images/banner-person-02.svg" alt="">
+    <img class=" banner__person--3 position-absolute d-lg-none" src="./assets/images/banner-person-03.svg" alt="">
+    <img class=" banner__person--4 position-absolute d-none d-lg-block d-lg-none" src="./assets/images/banner-person-04.svg" alt="">
+    <!-- phone pad 的圖 end -->
+
+    <div class="container px-9">
       <div class="row justify-content-center indexWrap">
-        <div class="col-10  bg-light-gray rounded-4 p-0">
-          <div class="row position-relaitve ">
-            <div class="col-6">
-              <p class="free text-light bg-gradient fs-3 position-absolute">免費試用版</p>
-              <h2 class="text-primary fs-lg-1 d-none d-lg-block fw-bold mt-18">小綠簽</h2>
-              <p>護樹、永續、減碳的綠色生活
-                響應環保無紙化電子簽署，
+        <div class="col-lg-10  bg-light-gray rounded-4 p-lg-0 position-relative ">
+          <img class=" banner__grass position-absolute d-none d-lg-block " src="./assets/images/banner-grass.svg" alt="">
+          <img class=" banner__plant position-absolute d-none d-lg-block " src="./assets/images/banner-plant.svg" alt="">
+          <img class=" banner__bag position-absolute d-none d-lg-block" src="./assets/images/banner-bag.svg" alt="">
+          <img class=" banner__person--1 position-absolute d-none d-lg-block " src="./assets/images/banner-person-01.svg" alt="">
+          <img class=" banner__person--2 position-absolute d-none d-lg-block " src="./assets/images/banner-person-02.svg" alt="">
+          <img class=" banner__person--3 position-absolute d-none d-lg-block " src="./assets/images/banner-person-03.svg" alt="">
+          <img class=" banner__person--4 position-absolute d-none d-lg-block " src="./assets/images/banner-person-04.svg" alt="">
+        
+
+          <div class="row ">
+            <!-- pc左邊內容 start -->
+            <div class="col-5 d-none d-lg-block">
+              <p class="free text-light bg-gradient fs-3 position-absolute ">免費試用版</p>
+              <h2 class="text-primary fs-lg-1 d-none d-lg-block fw-bold mt-18 mb-2 ms-10">小綠簽</h2>
+              <p class="ms-10">護樹、永續、減碳的綠色生活<br>
+                響應環保無紙化電子簽署，<br>
                 省時便利又環保。
                 </p>
+                <a href="sign.html">前往簽名</a>
             </div>
-            <div class="col-6">
+            <!-- pc左邊內容 end -->
+
+            <!-- 上傳檔案 start -->
+            <div class="col-lg-7 mt-5 mt-lg-8">
               <div class="upload rounded-2 d-flex flex-column align-items-center">
                 <img class="mx-auto mt-7 mb-5 " src="./assets/images/banner-upload.svg" alt="">
                 <label for="upload__btn" class="text-light bg-gradient py-4 mb-4 w-50 text-center rounded ">選擇檔案
@@ -45,6 +69,7 @@
                 
               </div>
             </div>
+            <!-- 上傳檔案 end -->
           </div>
          
         </div>

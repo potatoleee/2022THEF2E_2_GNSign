@@ -8,29 +8,52 @@
     <title>點點簽</title>
 </head>
 <body>
+    <header>
+        <nav class="container px-9 px-lg-0">
+          <div class="d-flex justify-content-between align-items-lg-start align-items-end mt-7 mb-lg-5">
+            <h1>
+              <a class="logo" href="index.html">GNSign | 小綠簽</a>
+            </h1>
+          </div>
+        
+        </nav>
+      </header>
     <!-- 1. 設定繪圖狀態，如果使用者按下滑鼠 / 點擊手機螢幕，便開啟狀態
     2. 開啟狀態下，鎖定滑鼠 / 手指在畫布上的位置，並在滑動時產生線條
     3. 放開滑鼠 / 手指 or 移動範圍超出畫布時，關閉狀態，並產生新路徑避免下一段繪圖受影響
     4. 設置按鈕，讓使用者能夠重設畫布、儲存完成的簽名 -->
-    <h1 class="text-primary font-roboto fw-bold">hwqkej</h1>
-    <h2 class="fw-bold">點點簽</h2>
-    <button class="btn bg-gradient">123</button>
-    <div class="container">
-
-      <canvas id="canvas"     
-      width="500"
-      height="300" style="border: 1px solid #000"></canvas>
-    </div>
-
-  <img class="show-img" width="250" height="150" style="border: 1px solid" />
-
-  <div class="btn-group">
-    <button class="clear">Clear</button>
-    <button class="save">Save</button>
-  </div>
- 
-  <a href="./farbic.html">下一頁</a>
-
+    <main>
+        <ul class="nav nav-pills justify-content-center" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">手寫簽名</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">匯入簽名檔</button>
+            </li>
+          </ul>
+        
+          <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">...</div>
+            <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">...</div>
+          
+          </div>
+        <div class="container">
+    
+          <canvas id="canvas"     
+          width="500"
+          height="300" style="border: 1px solid #000"></canvas>
+        </div>
+    
+      <img class="show-img" width="250" height="150" style="border: 1px solid" />
+    
+      <div class="btn-group">
+        <button class="clear">Clear</button>
+        <button class="save">Save</button>
+      </div>
+     
+      <a href="./farbic.html">下一頁</a>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
     <script src="./assets/js/all.js"></script>
 </body>
 </html>

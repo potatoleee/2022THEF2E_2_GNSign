@@ -31,7 +31,12 @@ $utilities: map-merge(
         class: bg,
         values: (auto, cover, contain)
       ),
-
+      "background-color": map-merge(
+                 map-get($utilities,"background-color"),(
+                  responsive: true,
+                )
+            ),
+  
     
     "font-size": map-merge(
       map-get($utilities,"font-size"),
