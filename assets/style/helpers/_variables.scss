@@ -78,6 +78,9 @@ $light:         #FFFFFF;//$gray-100 !default;
 $dark:          #424242;//$black !default;
 $light-gray:    #F0F0F0;
 $gray:          #B7B7B7;
+$pen-dark:      $black;
+$pen-blue:      #0014C7;
+$pen-red:       #CA0000;
 
 // scss-docs-end theme-color-variables
 
@@ -91,8 +94,11 @@ $theme-colors: (
   "danger":     $danger,
   "light":      $light,
   "dark":       $dark,
-  "light-gray":       $light-gray,
+  "light-gray": $light-gray,
   "gray":       $gray,
+  "pen-dark":   $pen-dark,
+  "pen-blue":   $pen-blue,
+  "pen-red":    $pen-red,
 ) !default;
 // scss-docs-end theme-colors-map
 
@@ -413,9 +419,9 @@ $border-radius-pill:          50rem !default;
 // scss-docs-end border-radius-variables
 
 // scss-docs-start box-shadow-variables
-$box-shadow:                  0 3px 6px #00000029 !default;
+$box-shadow:                 1px 4px 6px rgba(0, 0, 0, 0.11) !default;
 $box-shadow-sm:               0 .125rem .25rem rgba($black, .075) !default;
-$box-shadow-lg:               0 1rem 3rem rgba($black, .175) !default;
+$box-shadow-lg:               1px -1px 6px rgba(0, 0, 0, 0.11) !default;
 $box-shadow-inset:            inset 0 1px 2px rgba($black, .075) !default;
 // scss-docs-end box-shadow-variables
 

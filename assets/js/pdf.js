@@ -4,6 +4,7 @@ const selectFile = document.querySelector(".select");
 const canvas = document.querySelector("#canvas");
 const ctx = canvas.getContext("2d");
 
+
 // 參數的部份請先將 PDF 放入專案資料夾內，並寫入路徑
 
 async function renderPDF(data){

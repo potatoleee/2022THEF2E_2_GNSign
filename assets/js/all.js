@@ -1,8 +1,9 @@
 const canvas = document.querySelector("#canvas");
 const ctx = canvas.getContext("2d");
-const clearBtn = document.querySelector(".clear");
-const saveBtn = document.querySelector(".save");
+const btnClearSign = document.querySelector(".btnClearSign");
+const btnSaveSign = document.querySelector(".btnSaveSign");
 const showImage = document.querySelector(".show-img");
+
 
 
 
@@ -11,6 +12,7 @@ const showImage = document.querySelector(".show-img");
 // 設定線條的相關數值
 ctx.lineWidth = 4;
 ctx.lineCap = "round";
+ctx.fillStyle = "blue";
 
 // 設置狀態來確認滑鼠 / 手指是否按下或在畫布範圍中
 let isPainting = false;
@@ -37,6 +39,7 @@ function getPaintPosition(e) {
 function startPosition(e) {
   e.preventDefault();
   isPainting = true;
+  
 }
 
 // 結束繪圖時，將狀態關閉，並產生新路徑
@@ -63,12 +66,23 @@ function reset() {
   ctx.clearRect(0, 0, canvas.width, canvas.height);
 }
 
-function saveImage() {
-    // 圖片儲存的類型選擇 png ，並將值放入 img 的 src
-    const newImg = canvas.toDataURL("image/png");
-    showImage.src = newImg;
-    localStorage.setItem('img' , newImg)
-  }
+// function saveImage() {
+//     // 圖片儲存的類型選擇 png ，並將值放入 img 的 src
+//     const newImg = canvas.toDataURL("image/png");
+//     showImage.src = newImg;
+//     localStorage.setItem('img' , newImg)
+//   }
+function saveImage(){
+  const newImg = canvas.toDataURL("image/png");
+  localStorage.setItem('img' , newImg);
+}
+
+//儲存簽名後跳轉頁面
+function jumpToFarbic(){
+  window.location.href="farbic.html";
+}
+
+
 
 // event listener 電腦板
 canvas.addEventListener("mousedown", startPosition);
@@ -82,7 +96,15 @@ canvas.addEventListener("touchend", finishedPosition);
 canvas.addEventListener("touchcancel", finishedPosition);
 canvas.addEventListener("touchmove", draw);
 
-clearBtn.addEventListener("click", reset);
+btnClearSign.addEventListener("click", reset);
 
-saveBtn.addEventListener("click", saveImage);
+// btnSaveSign.addEventListener("click", saveImage);
+btnSaveSign.addEventListener("click",function(){
+  jumpToFarbic(),
+  saveImage();
+})
+
+
+
+
 

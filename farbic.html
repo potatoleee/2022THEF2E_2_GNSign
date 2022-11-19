@@ -4,18 +4,131 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>點點簽</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="./assets/style/all.css">
+    <title>小綠簽 GNSign</title>
   </head>
   <body>
-    <div>
-      <input type="file" accept="application/pdf" placeholder="選擇PDF檔案" />
-    </div>
-    <canvas id="canvas" style="border: 1px solid #000"> </canvas>
+    <header>
+      <nav class="container px-9 px-lg-0 d-none d-lg-block">
+        <div class="d-flex justify-content-between align-items-lg-start align-items-end mt-7 mb-lg-5">
+          <h1>
+            <a class="logo" href="index.html">GNSign | 小綠簽</a>
+          </h1>
+        </div>
+      </nav>
+      <!-- 手機平板nav start -->
+      <div class="container-fluid d-lg-none">
+        <div class="row py-4">
+          <div class="col-9">
+             <!-- 頁數 start -->
+             <div class="d-flex align-items-center justify-content-between gap-8 px-4 py-3 shadow rounded ">
+              <span class=" material-symbols-outlined bg-primary text-light w-8n h-8n rounded-1 d-flex justify-content-center align-items-center ">
+                chevron_left
+                </span>
+                <p class="font-roboto">1 / 1</p>
+                <span class=" material-symbols-outlined bg-primary text-light w-8n h-8n rounded-1 d-flex justify-content-center align-items-center ">
+                  chevron_right
+                  </span>
+            </div>
+            <!-- 頁數 end -->
+          </div>
+          <div class="col-3">
+            <button class="btn btn-primary bg-gradient text-light fs-6 py-4 w-100 " class="download">儲存</button>
+          </div>
+        </div>
     
-    <p>請選擇簽名，可放置於上方的pdf</p>
-    <img class="sign" style="border: 1px solid #000" width="250" height="150" />
-  <!-- 載入需要的套件  -->
-  <button class="download">download PDF</button>
+      </div>
+      <!-- 手機平板nav end -->
+
+    </header>
+    <!-- 主要內容 -->
+    <main>
+      <div class="container">
+        <canvas id="canvas" style="border: 1px solid #000"> </canvas>
+      </div>
+      <div>
+        <input type="file" accept="application/pdf" placeholder="選擇PDF檔案" />
+      </div>
+
+      
+      
+      <!-- <img class="sign" style="border: 1px solid #000" width="250" height="150" /> -->
+    <!-- 載入需要的套件  -->
+
+
+    </main>
+      <!-- 主要內容 -->
+      <!-- 功能列 start -->
+      <footer class="bg-lg-light  py-4">
+        <div class="container-fluid">
+          <div class="row justify-content-center bg-light rounded-2">
+            <div class="col-lg-11 offset-lg-1">
+              <div class="d-flex justify-content-between">
+                <!-- 頁數+放大縮小 start -->
+                <div class=" d-none d-lg-flex ">
+                  <!-- 頁數 start -->
+                  <div class="d-flex align-items-center gap-8 px-4 py-3 shadow rounded">
+                    <span class=" material-symbols-outlined bg-primary text-light w-8n h-8n rounded-1 d-flex justify-content-center align-items-center ">
+                      chevron_left
+                      </span>
+                      <p class="font-roboto">1 / 1</p>
+                      <span class=" material-symbols-outlined bg-primary text-light w-8n h-8n rounded-1 d-flex justify-content-center align-items-center ">
+                        chevron_right
+                        </span>
+                  </div>
+                  <!-- 頁數 end -->
+                  <!-- 放大縮小 start -->
+                  <div class="d-flex align-items-center gap-8 px-4 py-3 shadow rounded">
+                    <img src="./assets/images/icon-zoom-in.svg" alt="">
+                      <p class="font-roboto"> 100% </p>
+                      <img src="./assets/images/icon-zoom-out.svg" alt="">
+                  </div>
+                  <!-- 放大縮小 end -->
+                </div>
+                <!-- 頁數+放大縮小 start -->
+
+                <!-- 簽名功能鍵 start-->
+              
+                  <ul class="d-flex gap-6 mx-auto py-2 ">
+                    <li class=" d-flex flex-column align-items-center">
+                      <span class="material-symbols-outlined p-2 bg-light-gray color-gray rounded-9 ">
+                        drive_file_rename_outline
+                        </span>
+                        <p class=" fs-9 ">簽名</p>
+                    </li>
+                    <li class=" d-flex flex-column align-items-center">
+                      <span class="material-symbols-outlined p-2 bg-light-gray color-gray rounded-9 ">
+                        check
+                        </span>
+                        <p class=" fs-9 ">勾選</p>
+                    </li>
+                    <li class=" d-flex flex-column align-items-center">
+                      <span class="material-symbols-outlined p-2 bg-light-gray color-gray rounded-9 ">
+                        calendar_month
+                        </span>
+                        <p class=" fs-9 ">日期</p>
+                    </li>
+                    <li class=" d-flex flex-column align-items-center">
+                      <span class="material-symbols-outlined p-2 bg-light-gray color-gray rounded-9 ">
+                        title
+                        </span>
+                        <p class=" fs-9 ">插入文字</p>
+                    </li>
+                  </ul>
+                   
+                
+                <!-- 簽名功能鍵 end -->
+                        <button class="btn btn-primary bg-gradient text-light fs-6 px-lg-13 py-4 d-none d-lg-block " class="download">儲存</button>
+              </div>
+            
+            </div>
+          </div>
+          
+       
+        </div>
+      </footer>
+      <!-- 功能列 end -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.4/jspdf.min.js"></script>
     <script src="https://unpkg.com/fabric@latest/dist/fabric.js"></script>
     <script src="https://mozilla.github.io/pdf.js/build/pdf.js"></script>

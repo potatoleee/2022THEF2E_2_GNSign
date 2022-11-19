@@ -108,6 +108,7 @@ $utilities: map-merge(
           4n: 16px,
           5n: 20px,
           8n: 32px,
+          9n: 36px,
           12n: 48px,
           25: 25%,
           60: 60%,
@@ -134,6 +135,7 @@ $utilities: map-merge(
                   1 :1px,
                   4n: 16px,
                   8n: 32px,
+                  9n: 36px,
                   10n :40px,
                   12n: 48px,
                   17n: 68px,
@@ -183,6 +185,7 @@ $utilities: map-merge(
         2: $border-radius,
         3: $border-radius-lg,
         4: 34px,
+        9: 9px,
         bs: $spacer,
         circle: 50%,
         pill: $border-radius-pill
