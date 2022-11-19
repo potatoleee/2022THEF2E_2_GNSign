@@ -17,8 +17,6 @@ async function printPDF(pdfData) {
   // 將檔案處理成 base64
   pdfData = await readBlob(pdfData);
 
-  pdfData = localStorage.getItem("uploadPdf");
-
   // 將 base64 中的前綴刪去，並進行解碼
   const data = atob(pdfData.substring(Base64Prefix.length));
 
@@ -44,7 +42,6 @@ async function printPDF(pdfData) {
   return renderTask.promise.then(() => canvas);
 }
 
-
 async function pdfToImage(pdfData) {
 
   // 設定 PDF 轉為圖片時的比例
@@ -61,24 +58,6 @@ async function pdfToImage(pdfData) {
 // 此處 canvas 套用 fabric.js
 const canvas = new fabric.Canvas("canvas");
 
-
-async function farbic(){
-  canvas.requestRenderAll();
-  pdfData = localStorage.getItem("uploadPdf");
-  const pdfData = await printPDF(e.target.files[0]);
-  const pdfImage = await pdfToImage(pdfData);
-  
-  // 透過比例設定 canvas 尺寸
-  canvas.setWidth(pdfImage.width / window.devicePixelRatio);
-  canvas.setHeight(pdfImage.height / window.devicePixelRatio);
-  
-  // 將 PDF 畫面設定為背景
-  canvas.setBackgroundImage(pdfImage, canvas.renderAll.bind(canvas));
-}
-
-
-farbic();
-
 document.querySelector("input").addEventListener("change", async (e) => {
   canvas.requestRenderAll();
   const pdfData = await printPDF(e.target.files[0]);
@@ -93,7 +72,6 @@ document.querySelector("input").addEventListener("change", async (e) => {
 });
 
 
-
 const sign = document.querySelector(".sign");
 
 // 若 localStorage 有資料才放入
@@ -102,23 +80,23 @@ if (localStorage.getItem("img")) {
 }
 
 sign.addEventListener("click", () => {
-    if (!sign.src) return;
-  
-    fabric.Image.fromURL(sign.src, function (image) {
-  
-        // 設定簽名出現的位置及大小，後續可調整
-        image.top = 400;
-          image.scaleX = 0.5;
-      image.scaleY = 0.5;
-      canvas.add(image);
-    });
-  });
+  if (!sign.src) return;
 
-  // 引入套件所提供的物件
+  fabric.Image.fromURL(sign.src, function (image) {
+
+	  // 設定簽名出現的位置及大小，後續可調整
+	  image.top = 400;
+		image.scaleX = 0.5;
+    image.scaleY = 0.5;
+    canvas.add(image);
+  });
+});
+
+// 引入套件所提供的物件
 const pdf = new jsPDF();
 
 const download = document.querySelector(".download");
-
+console.log(download);
 download.addEventListener("click", () => {
 
   // 將 canvas 存為圖片
