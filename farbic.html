@@ -34,7 +34,7 @@
             <!-- 頁數 end -->
           </div>
           <div class="col-3">
-            <button class=" download btn btn-primary bg-gradient text-light fs-6 py-4 w-100 " >儲存</button>
+            <button class=" downloadPhone btn btn-primary bg-gradient text-light fs-6 py-4 w-100 " >儲存</button>
           </div>
         </div>
     
@@ -44,12 +44,12 @@
     </header>
     <!-- 主要內容 -->
     <main>
-      <div class="container">
+      <div class="container d-flex justify-content-center">
         <canvas id="canvas" style="border: 1px solid #000"> </canvas>
       </div>
-      <div>
-        <input class="d-block" type="file" accept="application/pdf" placeholder="選擇PDF檔案" />
-      </div>
+      <!-- <div>
+        <input  type="file" accept="application/pdf" placeholder="選擇PDF檔案" />
+      </div> -->
 
       
       
@@ -119,7 +119,7 @@
                    
                 
                 <!-- 簽名功能鍵 end -->
-                <button class=" download btn btn-primary bg-gradient text-light fs-6 px-lg-13 py-4 d-none d-lg-block ">儲存</button>
+                <button class=" downloadPc btn btn-primary bg-gradient text-light fs-6 px-lg-13 py-4 d-none d-lg-block ">儲存</button>
               </div>
             
             </div>
@@ -129,9 +129,11 @@
         </div>
       </footer>
       <!-- 功能列 end -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.4/jspdf.min.js"></script>
+    <!-- farbic.js 套件 -->
     <script src="https://unpkg.com/fabric@latest/dist/fabric.js"></script>
     <script src="https://mozilla.github.io/pdf.js/build/pdf.js"></script>
-    <script src="./assets/js/farbic.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.4/jspdf.min.js"></script>
+    <script src="./assets/js/pdfSign.js"></script>
+    <!-- <script src="./assets/js/farbic.js"></script> -->
   </body>
 </html>
