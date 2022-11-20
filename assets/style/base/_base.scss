@@ -70,3 +70,19 @@ textarea{
         background: $light;
     }
 }
+
+.modal-dialog{
+    max-width: 343px;
+}
+
+.canvas-container{
+    #canvas{
+        width: 100% !important;
+        height: auto !important ;
+        object-fit: contain;
+    }
+    .upper-canvas{
+        width: 100% !important;
+        height: auto !important;
+    }
+}

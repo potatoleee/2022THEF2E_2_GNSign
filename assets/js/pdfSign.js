@@ -28,7 +28,7 @@ async function printPDF(data) {
     canvas.width = viewport.width;
     canvas.height = viewport.height;
 
-    //取得頁數
+    //取得頁數 
     // pdfPagesTotal = pdfDoc.numPages;
     // document.getElementById('page_num').textContent = pageNum;
     // document.getElementById('page_count').textContent = pdfPagesTotal;

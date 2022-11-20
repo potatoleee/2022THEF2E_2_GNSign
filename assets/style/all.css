@@ -7916,6 +7916,10 @@ textarea.form-control-lg {
   height: 48px !important;
 }
 
+.h-27n {
+  height: 108px !important;
+}
+
 .h-25 {
   height: 25% !important;
 }
@@ -10192,6 +10196,9 @@ textarea.form-control-lg {
   .h-sm-12n {
     height: 48px !important;
   }
+  .h-sm-27n {
+    height: 108px !important;
+  }
   .h-sm-25 {
     height: 25% !important;
   }
@@ -11726,6 +11733,9 @@ textarea.form-control-lg {
   }
   .h-md-12n {
     height: 48px !important;
+  }
+  .h-md-27n {
+    height: 108px !important;
   }
   .h-md-25 {
     height: 25% !important;
@@ -13262,6 +13272,9 @@ textarea.form-control-lg {
   .h-lg-12n {
     height: 48px !important;
   }
+  .h-lg-27n {
+    height: 108px !important;
+  }
   .h-lg-25 {
     height: 25% !important;
   }
@@ -14796,6 +14809,9 @@ textarea.form-control-lg {
   }
   .h-xl-12n {
     height: 48px !important;
+  }
+  .h-xl-27n {
+    height: 108px !important;
   }
   .h-xl-25 {
     height: 25% !important;
@@ -16332,6 +16348,9 @@ textarea.form-control-lg {
   .h-xxl-12n {
     height: 48px !important;
   }
+  .h-xxl-27n {
+    height: 108px !important;
+  }
   .h-xxl-25 {
     height: 25% !important;
   }
@@ -17819,6 +17838,21 @@ textarea {
 
 .nav-pills .nav-link {
   background: #FFFFFF;
+}
+
+.modal-dialog {
+  max-width: 343px;
+}
+
+.canvas-container #canvas {
+  width: 100% !important;
+  height: auto !important;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.canvas-container .upper-canvas {
+  width: 100% !important;
+  height: auto !important;
 }
 
 .font-roboto {
