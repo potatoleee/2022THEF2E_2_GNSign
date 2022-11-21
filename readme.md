@@ -8,6 +8,9 @@
 
 **Live Demo: [小綠簽](https://potatoleee.github.io/THE-F2E-2-GNSign/)**
 
+## 介紹
+可上傳一頁pdf，再來簽署一個自己的簽名並且放置於pdf上，最後就能下載下來了！
+目前支援一頁的pdf，及一個簽名，其他功能持續優化中，感謝各位！
 
 ## 使用技術 
 
@@ -16,4 +19,5 @@
 * [fabric.js](http://fabricjs.com/)
 * [jsPDF](https://rawgit.com/MrRio/jsPDF/master/docs/index.html)
 * [Lottie](https://github.com/airbnb/lottie-web)
+
 
