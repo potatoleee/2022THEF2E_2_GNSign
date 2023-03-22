@@ -9,8 +9,12 @@
 **Live Demo: [小綠簽](https://potatoleee.github.io/2022THEF2E_2_GNSign/)**
 
 ## 介紹
+參加2022 THEF2E 第二週關卡 https://2022.thef2e.com/news/week2
 可上傳一頁pdf，再來簽署一個自己的簽名並且放置於pdf上，最後就能下載下來了！<br>
-目前支援一頁的pdf，及一個簽名，其他功能持續優化中，感謝各位！
+目前支援一頁的pdf，及一個簽名，其他功能持續優化中，感謝各位！!
+![image](https://github.com/potatoleee/2022THEF2E_2_GNSign/blob/main/assets/images/readmeImg/GNsing-02.svg)
+![image](https://github.com/potatoleee/2022THEF2E_2_GNSign/blob/main/assets/images/readmeImg/GNsing-03.svg)
+![image](https://github.com/potatoleee/2022THEF2E_2_GNSign/blob/main/assets/images/readmeImg/GNsing-04.svg)
 
 ## 使用技術 
 
