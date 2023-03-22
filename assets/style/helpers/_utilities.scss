@@ -1,16 +1,7 @@
-
-
-
-
-
-
-// 不要去改node bootstrap.utilities
 $utilities: map-merge(
-    $utilities,(
-     
+    $utilities,( 
       "opacity": (
         property: opacity,
-        // class: opac,
         values: (
           0: 0,
           25: .25,
@@ -36,8 +27,6 @@ $utilities: map-merge(
                   responsive: true,
                 )
             ),
-  
-    
     "font-size": map-merge(
       map-get($utilities,"font-size"),
       (
@@ -192,6 +181,11 @@ $utilities: map-merge(
         circle: 50%,
         pill: $border-radius-pill
       )
+    ),
+    "cursor": (
+      property: cursor,
+      class: cursor,
+      values: pointer
     ),
    
     )

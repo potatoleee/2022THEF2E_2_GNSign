@@ -27,10 +27,7 @@
             <li class="nav-item" role="presentation">
               <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">手寫簽名</button>
             </li>
-            <li class="nav-item" role="presentation">
-              <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">匯入簽名檔</button>
-            </li>
-          </ul>
+        </ul>
         
           <div class="tab-content" id="myTabContent">
             <!-- 手寫簽名 -->
@@ -40,8 +37,8 @@
                         <div class="col-lg-6 ">
                             <ul class="d-flex justify-content-center gap-4 mb-8">
                                 <li class=" w-9n h-9n bg-dark rounded-circle bg-pen-dark"></li>
-                                <li class=" w-9n h-9n bg-dark rounded-circle bg-pen-blue"></li>
-                                <li class=" w-9n h-9n bg-dark rounded-circle bg-pen-red"></li>
+                                <!-- <li class=" w-9n h-9n bg-dark rounded-circle bg-pen-blue"></li>
+                                <li class=" w-9n h-9n bg-dark rounded-circle bg-pen-red"></li> -->
                             </ul>
                             <canvas id="canvas" width="590" height="224" class="signCanvas rounded-3" ></canvas>
                            
@@ -64,17 +61,7 @@
   
                
             </div>
-            <!-- 匯入簽名檔 -->
-            <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-
-            </div>
-          
           </div>
-       
-    
-    
-     
-     
     </main>
     <div class="loading">
       <div id="loading-sign" class="w-20 mx-auto mt-16">
