@@ -6,7 +6,7 @@
 
 **Figma Document: [Link](https://www.figma.com/file/6ZjDFQSrwRy6OUAXDmJNhz/%E5%B0%8F%E7%B6%A0%E7%B0%BD?node-id=0%3A1)**
 
-**Live Demo: [小綠簽](https://potatoleee.github.io/THE-F2E-2-GNSign/)**
+**Live Demo: [小綠簽](https://potatoleee.github.io/2022THEF2E_2_GNSign/)**
 
 ## 介紹
 可上傳一頁pdf，再來簽署一個自己的簽名並且放置於pdf上，最後就能下載下來了！<br>
