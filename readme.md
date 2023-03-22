@@ -1,6 +1,6 @@
 # 2022 THE F2E WEEK2 - 今晚，我想來點點簽
 
-![image](https://github.com/potatoleee/THE-F2E-2-GNSign/blob/main/assets/images/%E4%B8%BB%E8%A6%963.svg)
+![image](https://github.com/potatoleee/THE-F2E-2-GNSign/blob/main/assets/images/reademeImg/GNsing-01.svg)
 
 **UIUX Design : [K-T](https://2022.thef2e.com/users/12061579703802991521)**
 
